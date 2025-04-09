@@ -21,12 +21,13 @@ Customers without partners or dependents are more likely to churn.
 Multiple models were tested including Logistic Regression, Random Forest, and XGBoost. Feature engineering involved the creation of variables like IsFamily, encoding categorical features, and handling missing values appropriately. Hyperparameter tuning was applied using GridSearchCV.
 
 5. Final Results (Tuned XGBoost)
-Metric	Score
-Accuracy	73%
-Precision	49%
-Recall (Churn class)	80%
-F1-score	0.61
-ROC AUC	0.84 ✅
+| Metric               | Score      |
+| -------------------- | ---------- |
+| Accuracy             | 73%        |
+| Precision            | 49%        |
+| Recall (Churn class) | 80%        |
+| F1-score             | 0.61       |
+| ROC AUC              | **0.84** ✅ |
 The model is optimized for high recall to ensure most churn-prone customers are identified, even if it means slightly lower precision.
 
 6. Business Impact
